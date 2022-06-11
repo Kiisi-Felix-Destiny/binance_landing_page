@@ -4,6 +4,7 @@
     --custom_yellowText:#C99400;
     --headerDarkTheme:rgb(24, 26, 32);
     --textInputDark:#1E2329;
+    --textLightColor:#474D57;
 }
 *{
     margin:0;
@@ -12,6 +13,10 @@
 }
 html{
     font-size:62.5%;
+}
+body{
+    position:relative;
+    overflow-x: hidden;
 }
 
 /* HEADER SECTION */
@@ -44,76 +49,116 @@ html{
     display:flex;
     height:100%;
     font-size:1.4rem;
-    width:48%;
+    width:65rem;
 }
 
-.b-header_nav_2{
-    display:flex;
-    align-items: center;
-    font-size:1.4rem;
-    height:100%;
-    width:28%;
-    justify-content: space-around;
-    margin-left: auto;
-}
 .b-header_icons_apps{
     display:flex;
     align-items: center;
-    width:4rem;
+    width:5rem;
     height:100%;
-    margin-right: 15px;
 }
 .b-header_crypto{
     display:flex;
     align-items: center;
     width:14rem;
     height:100%;
-    margin-right: 10px;
+    justify-content: space-around;
 }
 .b-header_market{
     display:flex;
     align-items: center;
-    width:6rem;
+    width:7rem;
     height:100%;
-    margin-right: 10px;
+    justify-content: center;
 }
 .b-header_trade{
     display:flex;
     align-items: center;
-    width:6rem;
+    width:7rem;
+    justify-content: space-around;
     height:100%;
-    margin-right: 10px;
+}
+.b-header_trade>.dropdown{
+    margin-left:-10px;
 }
 .b-header_derivatives{
     display:flex;
     align-items: center;
-    width:9rem;
+    width:10rem;
     height:100%;
-    margin-right: 10px;
+    justify-content: space-around;
+}
+.b-header_derivatives>.dropdown{
+    margin-left:-10px;
 }
 .b-header_earn{
     display:flex;
     align-items: center;
-    width:5rem;
+    width:6rem;
     height:100%;
-    margin-right: 10px;
+    justify-content: space-around;
+}
+.b-header_earn>.dropdown{
+    margin-left:-10px;
 }
 .b-header_finance{
     display:flex;
     align-items: center;
-    width:7rem;
+    width:8rem;
     height:100%;
-    margin-right: 10px;
+    justify-content:space-around;
+}
+.b-header_finance>.dropdown{
+    margin-left:-10px;
 }
 .b-header_nft{
     display:flex;
     align-items: center;
-    width:5rem;
+    width:8rem;
     height:100%;
+    justify-content:space-around;
 }
 .dropdown{
     color:#888;
 }
+
+
+.b-header_nav_2{
+    display:flex;
+    align-items: center;
+    font-size:1.4rem;
+    height:100%;
+    width:38rem;
+    margin-left: auto;
+}
+.b-header_nav_2-section-1{
+    width:16.5rem;
+    height:inherit;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.b-header_nav_2-section-2{
+    width:21.5rem;
+    align-items:center;
+    display:flex;
+    justify-content: space-between;
+    height:inherit;
+}
+.b-header-register{
+    height:3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:7.2rem;
+    border-radius:3px;
+    background:var(--custom_yellowLight);
+}
+.b-header_menu-bar{
+    display:none;
+}
+
 .apps:hover{
     color:var(--custom_yellowLight)
 }
@@ -137,25 +182,72 @@ html{
     text-align: center;
 }
 .b-header_nft_text_mark{
-    width:70px;
+    width:30px;
     height:18px;
     background-color: var(--custom_yellowLight);
-    margin-left:5px;
+    margin-left:-15px;
     border-radius:3px ;
     padding:1px 2px;
     font-size:1.2rem;
     text-align: center;
 }
-.b-header-register{
-    width:8rem;
-    height:3.2rem;
-    background:var(--custom_yellowLight);
+
+/* SIDENAV */
+.b-sidenav{
+    font-family:'Rubik', sans-serif;
+    height:100vh;
+    width:36rem;
+    background:lightgreen;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:9999;
+}
+.sidenav-wrapper{
+    width:inherit;
+}
+.b-sidenav-wrapper_close{
+    width:100%;
+    height:6rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.b-sidenav-wrapper_close-btn{
+    height:2.5rem;
+    font-weight:900;
+    width:3rem;
+}
+.b-sidenav-wrapper_section-1{
+    width:100%;
+    height:12rem;
+    background:greenyellow;
     display:flex;
     align-items:center;
-    justify-content: center;
-    border-radius: 4px;
-    margin-left: 2px;
+    justify-content:space-around;
+    flex-direction:column;
+    font-size:1.4rem;
 }
+.b-sidenav-wrapper_section-1__log-in{
+    width:100%;
+    height:3rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:2.5rem;
+}
+
+.b-sidenav-wrapper_section-1__register{
+    width:94%;
+    border-radius:3px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:4rem;
+    background:var(--custom_yellowLight);
+}
+
+
 
 /* MAIN SECTION */
 .b-main{
@@ -222,11 +314,11 @@ html{
 .b-header_theme{
     cursor: pointer;
 }
-.darkmode:hover{
+.darkmode_lightmode:hover{
     color:var(--custom_yellowLight);
 }
 .b-stats{
-    height:30rem;
+    height:35rem;
     width:100%;
     display: flex;
     position:relative;
@@ -252,6 +344,7 @@ html{
 }
 .b-stats_data--exchange > p{
     font-size:1.5rem;
+    height:4rem;
 }
 .b-stats_data--cryptocurrencies{
     width:25%;
@@ -264,6 +357,7 @@ html{
 }
 .b-stats_data--cryptocurrencies > p{
     font-size:1.5rem;
+    height:4rem;
 }
 .b-stats_data--registered{
     width:25%;
@@ -276,6 +370,7 @@ html{
 }
 .b-stats_data--registered > p{
     font-size:1.5rem;
+    height:4rem;
 }
 .b-stats_data--transaction{
     width:25%;
@@ -288,6 +383,7 @@ html{
 }
 .b-stats_data--transaction > p{
     font-size:1.5rem;
+    height:4rem;
 }
 .b-cryptocurrencies{
     color:var(--textInputDark);
@@ -295,16 +391,16 @@ html{
     position: relative;
     padding-left: 8rem;
     padding-right: 8rem;
-    margin-bottom: 4rem;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    height:62rem;
 }
 .b-crypto{
-    height:6rem;
+    height:20rem;
     width:100%;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
 }
 .b-crypto--header{
     font-size:4rem;
@@ -343,7 +439,6 @@ html{
 }
 .b-crypto-coins{
     display:flex;
-    margin-bottom:1rem;
     width:100%;
     font-size:1.7rem;
     height:6rem;
@@ -351,6 +446,9 @@ html{
     padding-left:1rem;
     padding-right:1rem;
     border-radius: 3px;
+}
+.b-crypto-coins:not(:last-child){
+    margin-bottom:1rem;
 }
 .b-crypto-coins:hover{
     background:#F5F5F5;
@@ -374,7 +472,7 @@ html{
     width:25%;
     display:flex;
     justify-content:center;
-    color:red;
+    color:rgb(246, 70, 93);
 }
 .b-crypto-market{
     width:25%;
@@ -382,16 +480,16 @@ html{
     justify-content: right;
     font-weight:400;
 }
-.b-signup_text{
-    font-size:2.5rem;
-    margin-bottom:2rem;
-}
 .b-signup_box{
     display:flex;
     flex-direction:column;
     height:9rem;
-    margin-left:8rem;
-    margin-bottom:10rem;
+    width:100%;
+    padding-left: 8rem;
+}
+.b-signup_text{
+    font-size:2.5rem;
+    margin-bottom:2rem;
 }
 .b-signup-btn{
     height:100%;
@@ -405,12 +503,12 @@ html{
 }
 
 .b-crypto_portfolio{
-    height:75rem;
+    height:85rem;
     width:100%;
     padding: 5rem 5rem;
+    padding-top:15rem;
     display:flex;
     color:var(--textInputDark);
-    margin-bottom: 8rem;
 }
 .b-crypto_portfolio-content{
     width:65%;
@@ -428,8 +526,7 @@ html{
 }
 .b-crypto_portfolio-header{
     width:auto;
-    height:4rem;
-    margin-bottom: 10rem;;
+    margin-bottom: 5rem;
 }
 .b-crypto_portfolio-header > h1{
     font-size:4rem;
@@ -524,8 +621,8 @@ html{
     border-radius: 4px;
 }
 .b-explore{
-    height:90rem;
-    padding:4rem 8rem;
+    height:98rem;
+    padding:12rem 8rem;
     color:var(--textInputDark);
 }
 .b-explore-header{
@@ -1093,8 +1190,7 @@ html{
 }
 
 .b-start-earning-today{
-    height:20rem;
-    background:lightgreen;
+    height:30rem;
     padding:30px 30px;
     display:flex;
     justify-content: center;
@@ -1102,16 +1198,99 @@ html{
     flex-direction: column;
 }
 .b-start-earning_today--header{
-    font-size: 3rem;
+    font-size: 3.5rem;
     height:6rem;
-    background:red;
     letter-spacing:1px;
 }
 .b-start-earning_today--signup{
-    width:13rem;
-    height:4rem;
+    width:17rem;
+    height:4.8rem;
     background:var(--custom_yellowLight);
     display:flex;
     justify-content:center;
     align-items:center;
+    font-size:1.5rem;
+    border-radius: 3px;
+    margin-top:15px;
+}
+
+.b-binance-chat{
+    height:5rem;
+    width:10rem;
+    background:linear-gradient(rgb(248, 209, 47) 0%, rgb(240, 185, 11) 99.77%);
+    position:fixed;
+    bottom:2%;
+    right:1%;
+    transform:translate(-1%,-2%);
+    border-radius:25px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor:pointer;
+    padding:0 5px;
+}
+.binance-chat-icon{
+    color:var(--textInputDark);
+    font-size:2rem;
+}
+.b-binance-chat-text{
+    font-weight:bold;
+    font-size:1.6rem;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width:1245px){
+    .b-header_nav_2{
+        width:20.5rem;
+    }
+    .b-header_nav_2-section-1{
+        width:16.5rem;
+    }
+    .b-header_nav_2-section-2{
+        width:4rem;
+        justify-content: center;
+    }
+    .b-header_downloads,
+    .b-header_english,
+    .b-header_usd,
+    .b-header_theme{
+        display:none;
+    }
+    .b-header_menu-bar{
+        display:block;
+    }
+    
+}
+
+@media screen and (max-width:1060px){
+    .b-header_nav_2{
+        width:4rem;
+    }
+    .b-header_log-in,
+    .b-header-register{
+        display:none;
+    }
+    .b-header_nav_2-section-1{
+        width:0;
+        display:none;
+    }
+    .b-header_menu-bar{
+        display:block;
+    }
+}
+
+@media screen and (max-width:900px){
+    .b-header_nav_1{
+        display:none;
+    }
 }
