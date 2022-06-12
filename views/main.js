@@ -72,11 +72,18 @@ themeColorBtn.addEventListener("click",()=>{
 let menuBar = document.querySelector(".b-header_menu-bar");
 let closeBtn = document.querySelector(".b-sidenav-wrapper_close-btn"); 
 let sidenav = document.querySelector(".b-sidenav");
+let modal = document.querySelector(".b-modal");
 
 
 menuBar.onclick = () =>{
     sidenav.classList.add("show-hide")  
+    modal.classList.add("show-hide")  
 }
 closeBtn.onclick = () =>{
     sidenav.classList.remove("show-hide")  
+    modal.classList.remove("show-hide")  
+}
+modal.onclick = () =>{
+    sidenav.classList.remove("show-hide")  
+    modal.classList.remove("show-hide") 
 }

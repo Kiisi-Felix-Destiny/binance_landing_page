@@ -207,6 +207,19 @@ body{
 .b-sidenav.show-hide{
     right:0;
 }
+.b-modal{
+    position:fixed;
+    background:rgba(0, 0, 0, 0.1);
+    height:100vh;
+    width:100%;
+    z-index:8888;
+    top:0;
+    left:0;
+    display:none;
+}
+.b-modal.show-hide{
+    display:block;
+}
 .sidenav-wrapper{
     width:inherit;
 }
@@ -250,6 +263,13 @@ body{
     height:4rem;
     background:var(--custom_yellowLight);
 }
+.b-sidenav-wrapper_section-2{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+
 
 
 
