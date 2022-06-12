@@ -200,8 +200,12 @@ body{
     background:lightgreen;
     position:fixed;
     top:0;
-    right:0;
+    right:-36rem;
     z-index:9999;
+    transition:400ms ease-in-out;
+}
+.b-sidenav.show-hide{
+    right:0;
 }
 .sidenav-wrapper{
     width:inherit;
