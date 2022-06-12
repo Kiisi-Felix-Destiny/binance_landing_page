@@ -157,6 +157,7 @@ body{
 }
 .b-header_menu-bar{
     display:none;
+    cursor:pointer;
 }
 
 .apps:hover{
@@ -234,6 +235,8 @@ body{
     height:2.5rem;
     font-weight:900;
     width:3rem;
+    cursor:pointer;
+    color:rgb(112, 122, 138);
 }
 .b-sidenav-wrapper_section-1{
     width:100%;
