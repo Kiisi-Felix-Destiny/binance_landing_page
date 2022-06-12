@@ -78,12 +78,15 @@ let modal = document.querySelector(".b-modal");
 menuBar.onclick = () =>{
     sidenav.classList.add("show-hide")  
     modal.classList.add("show-hide")  
+    document.body.style.overflow = 'hidden'
 }
 closeBtn.onclick = () =>{
     sidenav.classList.remove("show-hide")  
     modal.classList.remove("show-hide")  
+    document.body.style.overflow = 'visible'
 }
 modal.onclick = () =>{
     sidenav.classList.remove("show-hide")  
     modal.classList.remove("show-hide") 
+    document.body.style.overflow = 'visible'
 }
