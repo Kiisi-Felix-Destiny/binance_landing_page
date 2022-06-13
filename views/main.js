@@ -9,6 +9,10 @@ let signupBoxSection = document.querySelector(".b-signup_box")
 let cryptoPortfolioSection = document.querySelector(".b-crypto_portfolio")
 let exploreSection = document.querySelector(".b-explore")
 let trustedCryptoExchangeSection = document.querySelector(".b-trusted_crypto-exchange")
+let startEarningTodaySection = document.querySelector(".b-start-earning-today")
+
+let getStartedInput = document.querySelector(".b-get_started-input")
+
 
 
 
@@ -19,8 +23,10 @@ let switchColorThemeText = document.querySelectorAll(".b-switch-color-theme")
 let switchColorThemeTextLight = document.querySelectorAll(".b-switch-color-theme-light")
 
 
-
 let darkmode = document.querySelector(".darkmode_lightmode");
+
+//IMG THEME
+let getStartedImg = document.querySelector(".b-get_started-img")
 
 
 themeColorBtn.addEventListener("click",()=>{
@@ -36,6 +42,8 @@ themeColorBtn.addEventListener("click",()=>{
         cryptoPortfolioSection.style.background = 'rgb(24, 26, 32)'
         exploreSection.style.background = 'rgb(24, 26, 32)'
         trustedCryptoExchangeSection.style.background = 'rgb(24, 26, 32)'
+        startEarningTodaySection.style.background = 'rgb(11, 14, 17)'
+        getStartedInput.style.background = 'rgb(30, 35, 41)'
 
         themeColorBtn.style.color = '#fff'
         for (v of switchColorThemeText){
@@ -44,6 +52,11 @@ themeColorBtn.addEventListener("click",()=>{
         for (v of switchColorThemeTextLight){
             v.style.color = 'rgb(183, 189, 198)';
         }
+        //getStartedImg.style.background = `url("./images/foreground-image-dark.png")`;
+        getStartedImg.classList.add("b-get_started-dark")
+        
+
+
     }else{
         darkmode.textContent = 'dark_mode'
 
@@ -56,6 +69,8 @@ themeColorBtn.addEventListener("click",()=>{
         cryptoPortfolioSection.style.background = '#fff'
         exploreSection.style.background = '#fff'
         trustedCryptoExchangeSection.style.background = '#fff'
+        startEarningTodaySection.style.background = '#fff'
+        getStartedInput.style.background = '#fff'
 
 
         themeColorBtn.style.color = 'rgb(24, 26, 32)'
@@ -65,6 +80,10 @@ themeColorBtn.addEventListener("click",()=>{
         for (v of switchColorThemeTextLight){
             v.style.color = '#474D57';
         }
+
+        //getStartedImg.style.background = `url("./images/foreground-image-light.png")`
+        getStartedImg.classList.remove("b-get_started-dark")
+
     }
 })
 
@@ -78,15 +97,15 @@ let modal = document.querySelector(".b-modal");
 menuBar.onclick = () =>{
     sidenav.classList.add("show-hide")  
     modal.classList.add("show-hide")  
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflowY = 'hidden'
 }
 closeBtn.onclick = () =>{
     sidenav.classList.remove("show-hide")  
     modal.classList.remove("show-hide")  
-    document.body.style.overflow = 'visible'
+    document.body.style.overflowY = 'visible'
 }
 modal.onclick = () =>{
     sidenav.classList.remove("show-hide")  
     modal.classList.remove("show-hide") 
-    document.body.style.overflow = 'visible'
+    document.body.style.overflowY = 'visible'
 }
