@@ -1450,6 +1450,11 @@ body{
 
 @media screen and (max-width:768px){
 
+    .b-header{
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+
     .b-get_started-i{
         display:none;
     }
