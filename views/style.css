@@ -16,7 +16,7 @@ html{
 }
 body{
     position:relative;
-    overflow-x: hidden;
+    overflow-x: ;
 }
 
 /* HEADER SECTION */
@@ -302,7 +302,7 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 .b-get_started-wrapper{
-    height:55rem;
+    height:100%;
     width:100%;
     position:relative;
     display:grid;
@@ -310,30 +310,38 @@ body{
 }
 .b-get_started{
     width:95%;
-    height:inherit;
+    height:100%;
     display:flex;
     color:var(--textInputDark);
     max-width:1350px;
+    flex-direction:row;
 }
 .b-get_started--content{
     width:50%;
+    height:55rem;
 }
 .b-get_started-i{
     width:50%;
-    height:inherit;
+    height:55rem;
     position:relative;
     display:flex;
     align-items:center;
+    justify-content: center;
 }
 .b-get_started-img{
     width:100%;
-    height:50rem;
+    height:100%;
+    max-height:45rem;
+    min-height:35rem;
+    max-width:55rem;
+    min-width:50rem;
     background:url("./images/foreground-image-light.png");
-    background-size:cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .b-get_started-img.b-get_started-dark{
     width:100%;
-    height:50rem;
+    height:100%;
     background:url("./images/foreground-image-dark.png");
     background-size:cover;
 }
@@ -342,8 +350,8 @@ body{
     font-weight:bolder;
     width:80%;
     letter-spacing: 1.5px;
-    margin-top: 5rem;
-    margin-left: 3rem;
+    padding-top:5rem;
+    padding-left:3rem;
 }
 .b-get_started--content-box{
     width:calc(100% - 3rem);
@@ -1333,6 +1341,9 @@ body{
 
 
 @media screen and (max-width:1245px){
+    .b-get_started{
+        width:100%;
+    }
     .b-header_nav_2{
         width:20.5rem;
     }
@@ -1369,6 +1380,22 @@ body{
     
 }
 
+
+@media screen and (max-width:1023px){
+
+    .b-get_started{
+        flex-direction: column-reverse;
+    }
+    .b-get_started--content{
+        width:100%;
+    }
+    .b-get_started-i{
+        width:100%;
+        
+    }
+
+}
+
 @media screen and (max-width:1060px){
     .b-header_nav_2{
         width:4rem;
@@ -1391,4 +1418,33 @@ body{
     .b-header_nav_1{
         display:none;
     }
+}
+
+@media screen and (max-width:768px){
+
+    .b-get_started-i{
+        display:none;
+    }
+    .b-get_started--content-text{
+        font-size:4rem;
+        width:95%;
+        letter-spacing: 0px;
+    }
+    .b-get_started--content-box{
+        width:calc(100% - 6rem);
+        height:10.5rem;
+        margin-top:3rem;
+        justify-content: space-between; 
+        flex-direction: column;
+    }
+    .b-get_started-input{
+        height:5.5rem;
+        width:100%;
+    }
+    .b-get_started-btn{
+        margin-top:1.2rem;
+        height:6rem;
+        width: 100%;
+    }
+
 }
