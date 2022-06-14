@@ -1483,7 +1483,10 @@ body{
         height:6rem;
         width: 100%;
     }
-
+    .b-stats_data--global{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
     .b-stats_data .b-stats_data--global div h1{
         font-size:2.6rem;
