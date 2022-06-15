@@ -492,6 +492,15 @@ body{
     align-items: center;
     color:var(--textLightColor);
 }
+.b-view-markets{
+    height: 4rem;
+    width:100%;
+    display:flex;
+    align-items:center;
+    font-weight:bold;
+    font-size:1.5rem;
+    display:none;
+}
 .b-crypto--sub_headers{
     display:grid;
     font-size:1.4rem;
@@ -539,6 +548,7 @@ body{
 .b-crypto-coin:nth-child(4){
     place-items:center end;
 }
+
 .b-crypto-coin div{
     display: flex;
     align-items: center;
@@ -1537,5 +1547,10 @@ body{
     }
     .b-crypto--header{
         padding-left:0;
+    }
+    .b-view-markets{
+        padding:0 1.5rem;
+        color:rgb(112, 122, 138);
+        display:block;
     }
 }
