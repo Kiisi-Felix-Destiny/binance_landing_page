@@ -1348,6 +1348,7 @@ body{
     color:var(--textLightColor);
     font-size:1.4rem;
     display:none;
+    pointer-events: none;
 }
 .b-binance-chat:hover .b-binance-chat-text{
     display: block;
@@ -1557,7 +1558,8 @@ body{
 
     .b-cryptocurrencies{
         width:100%;
-        padding:0;
+        padding-left:1rem;
+        padding-right: 1rem;
     }
     .b-crypto--header{
         padding-left:0;
