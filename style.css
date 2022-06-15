@@ -1328,9 +1328,9 @@ body{
     width:5rem;
     background:linear-gradient(rgb(248, 209, 47) 0%, rgb(240, 185, 11) 99.77%);
     position:fixed;
-    bottom:2%;
-    right:1%;
-    transform:translate(-1%,-2%);
+    bottom:3%;
+    right:2%;
+    transform:translate(-2%,-3%);
     border-radius:32px;
     display:flex;
     justify-content: center;
@@ -1473,8 +1473,8 @@ body{
 @media screen and (max-width:768px){
 
     .b-header{
-        padding-right:1rem;
-        padding-left:1rem;
+        padding-right:1.5rem;
+        padding-left:1.5rem;
     }
 
     .b-get_started-i{
@@ -1484,8 +1484,8 @@ body{
         font-size:4rem;
         width:95%;
         letter-spacing: 0px;
-        padding-left:1rem;
-        padding-right:1rem;
+        padding-left:1.5rem;
+        padding-right:1.5rem;
     }
     .b-get_started--content-box{
         width:100% ;
@@ -1493,8 +1493,8 @@ body{
         margin-top:3rem;
         justify-content: space-between; 
         flex-direction: column;
-        padding-left:1rem;
-        padding-right:1rem;
+        padding-left:1.5rem;
+        padding-right:1.5rem;
     }
     .b-get_started-input{
         height:5.5rem;
@@ -1506,8 +1506,8 @@ body{
         width: 100%;
     }
     .b-stats_data--global{
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .b-stats_data .b-stats_data--global div h1{
@@ -1563,7 +1563,8 @@ body{
         padding-left:0;
     }
     .b-view-markets{
-        padding:0 1.5rem;
+        padding-left:1.5rem;
+        padding-right:1.5rem;
         color:rgb(112, 122, 138);
         display:block;
     }
