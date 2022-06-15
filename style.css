@@ -1558,21 +1558,28 @@ body{
 
     .b-cryptocurrencies{
         width:100%;
-        padding-left:1rem;
+        padding-left:.5rem;
         padding-right: 1rem;
     }
+    .b-crypto--sub_headers{
+        padding:0 1.2rem;
+    }
+    .b-crypto-coin{
+        padding:0 1.2rem;
+    }
+
     .b-crypto--header{
         padding-left:0;
     }
     .b-view-markets{
-        padding-left:1.5rem;
-        padding-right:1.5rem;
+        padding-left:1.3rem;
+        padding-right:1.3rem;
         color:rgb(112, 122, 138);
         display:block;
     }
 
     .b-signup_box{
-        padding:0 1.5rem;
+        padding:0 1.8rem;
     }
     .b-signup_text{
         font-size:1.9rem;
