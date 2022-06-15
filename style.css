@@ -493,7 +493,7 @@ body{
     color:var(--textLightColor);
 }
 .b-view-markets{
-    height: 4rem;
+    height: 6rem;
     width:100%;
     display:flex;
     align-items:center;
@@ -567,22 +567,39 @@ body{
 
 
 
+
+
+/* SIGNUP BOX   */
+
+
+.b-signup_box-wrapper{
+    height:100%;
+    width:100%;
+    position:relative;
+    display:grid;
+    place-items:center;
+}
+
 .b-signup_box{
+    width:95%;
+    height:12rem;
+    padding-left:3rem;
     display:flex;
     flex-direction:column;
-    height:9rem;
-    width:100%;
-    padding-left: 8rem;
+    justify-content: space-around;
 }
 .b-signup_text{
-    font-size:2.5rem;
-    margin-bottom:2rem;
+    font-size:2.4rem;
+    width:100%;
+    height:5rem;
+    display:flex;
+    align-items:center;
 }
 .b-signup-btn{
-    height:100%;
+    height:4rem;
     width: 18rem;
     background:var(--custom_yellowLight);
-    border-radius: 3px;
+    border-radius: 4px;
     font-size:1.5rem;
     display:flex;
     justify-content: center;
@@ -1392,16 +1409,7 @@ body{
     .b-stats{
         width:100%;
     }
-    .b-stats_data .b-stats_data--global div{
-        
-    }
     
-    .b-stats_data .b-stats_data--global div h1{
-
-    }
-    .b-stats_data .b-stats_data--global div p{
-
-    }
     
 }
 
@@ -1445,6 +1453,12 @@ body{
     }
 
     .b-cryptocurrencies{
+        width:100%;
+    }
+
+    
+    .b-signup_box{
+        padding:0 2.5rem;
         width:100%;
     }
     
@@ -1553,4 +1567,17 @@ body{
         color:rgb(112, 122, 138);
         display:block;
     }
+
+    .b-signup_box{
+        padding:0 1.5rem;
+    }
+    .b-signup_text{
+        font-size:1.9rem;
+    }
+    .b-signup-btn{
+        height:4rem;
+        width: 100%;
+    }
 }
+
+
