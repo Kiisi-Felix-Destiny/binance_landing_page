@@ -684,7 +684,7 @@ body{
 
 .b-crypto_portfolio-account-content{
     height:8rem;
-    width:calc(100% - 8rem);
+    width:calc(100% - 12rem);
     padding-left:2rem;
     /* background:red; */
 }
@@ -696,7 +696,7 @@ body{
 .b-crypto_portfolio-account-content p{
     height:5rem;
     /* background:lightseagreen; */
-    font-size:1.4rem;
+    font-size:1.5rem;
 }
 .b-crypto_portfolio-account-img-1{
     width:8rem;
@@ -1504,7 +1504,7 @@ body{
     .b-crypto_portfolio{
         width:100%;
         grid-template-columns:1fr;
-        grid-template-rows: .3fr 1fr 1fr;
+        grid-template-rows: .3fr 1fr 1.1fr;
     }
     .b-crypto_portfolio-header{
         grid-column:1/3;
@@ -1517,6 +1517,9 @@ body{
     }
     .b-crypto_portfolio-content{
         margin-top:0;
+    }
+    .b-crypto_portfolio-account-content{
+        width:calc(100% - 8rem);
     }
     
 }
@@ -1656,6 +1659,9 @@ body{
     }
     .b-crypto_portfolio-content{
         padding-left:1.5rem;
+    }
+    .b-crypto_portfolio-btn{
+        width:100%;
     }
 }
 
