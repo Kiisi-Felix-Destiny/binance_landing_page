@@ -684,7 +684,7 @@ body{
 
 .b-crypto_portfolio-account-content{
     height:8rem;
-    width:calc(100% - 10rem);
+    width:calc(100% - 8rem);
     padding-left:2rem;
     /* background:red; */
 }
