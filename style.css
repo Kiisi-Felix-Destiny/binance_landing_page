@@ -569,6 +569,7 @@ body{
 
 
 
+
 /* SIGNUP BOX   */
 
 
@@ -606,124 +607,152 @@ body{
     align-items: center;
 }
 
-.b-crypto_portfolio{
-    height:85rem;
+
+
+
+/* CYRPTO PORTFOLIO  */
+
+.b-crypto_portfolio-wrapper{
+    height:100%;
     width:100%;
-    padding: 5rem 5rem;
-    padding-top:15rem;
-    display:flex;
-    color:var(--textInputDark);
-}
-.b-crypto_portfolio-content{
-    width:65%;
-    margin-right: 1rem;
-    display: flex;
-    flex-direction: column;
-    padding-left: 3rem;
-    justify-content: space-between;
-}
-.b-crypto_portfolio-img{
-    width:28%;
-    background:url("./images/binance-phone-img.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-.b-crypto_portfolio-header{
-    width:auto;
+    position:relative;
+    display:grid;
+    place-items:center;
     margin-bottom: 5rem;
 }
-.b-crypto_portfolio-header > h1{
-    font-size:4rem;
+.b-crypto_portfolio{
+    width:95%;
+    padding-top:15rem;
+    display:grid;
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     color:var(--textInputDark);
-    margin-bottom: 1.5rem;
+    /* background:lightgreen; */
+    gap:1rem;
 }
-.b-crypto_portfolio-header > p{
+.b-crypto_portfolio-header{
+    /* background:red; */
+    height:10rem;
+    padding-left:3rem;
+    padding-right:1rem;
+}
+.b-crypto_portfolio-header h1{
+    height:5rem;
+    display:flex;
+    align-items:center;
+    font-size:3.5rem;
+    /* background:lightseagreen; */
+}
+.b-crypto_portfolio-header p{
+    height:4rem;
+    /* background:lightsteelblue; */
     font-size:2rem;
-    color:var(--textInputDark);
+    font-weight:300;
+    display:flex;
+    align-items:center;
 }
 
-.b-crypto_portfolio-account{
+.b-crypto_portfolio-img{
+    /* background:yellow; */
+    grid-row:1/3;
+    grid-column:2/3;
+    height:65rem;
     display:flex;
-    align-items: center;
+    justify-content:center;
 }
-.b-crypto_portfolio-account-img{
-    width:8rem;
-    height:8rem;
-    background:url("./images/user.png");
-    background-size:cover;
-    margin-right:4rem;
+.b-crypto_portfolio-img div{
+    height:100%;
+    width:90%;
+    display:flex;
+    justify-content:center;
 }
+.b-crypto_portfolio-content{
+    /* background:magenta; */
+    padding-left:3rem;
+    margin-top:-5rem;
+    display:flex;
+    justify-content: space-between;
+    flex-direction:column;
+}
+.b-crypto_portfolio-account{
+    height: 12rem;
+    /* background:sienna; */
+    display:flex;
+    align-items:center;
+}
+
+
 .b-crypto_portfolio-account-content{
     height:8rem;
-    width:50rem;
+    width:calc(100% - 10rem);
+    padding-left:2rem;
+    /* background:red; */
 }
-.b-crypto_portfolio-account-content > h1{
-    font-size:2.5rem;
-    margin-bottom:1rem;
+.b-crypto_portfolio-account-content h1{
+    height:3rem;
+   /*  background:lightgreen; */
+    font-size:2rem;
 }
-.b-crypto_portfolio-account-content > p{
-    font-size:1.5rem;
+.b-crypto_portfolio-account-content p{
+    height:5rem;
+    /* background:lightseagreen; */
+    font-size:1.4rem;
 }
-
-.b-crypto_portfolio-identity{
-    display:flex;
-    align-items: center;
-}
-.b-crypto_portfolio-identity-img{
+.b-crypto_portfolio-account-img-1{
     width:8rem;
-    height:8rem;
-    background:url("./images/check.png");
-    background-size:cover;
-    margin-right:4rem;
+    height:8rem; 
 }
-.b-crypto_portfolio-identity-content{
-    height:8rem;
-    width:50rem;
-}
-.b-crypto_portfolio-identity-content > h1{
-    font-size:2.5rem;
-    margin-bottom:1rem;
-}
-.b-crypto_portfolio-identity-content > p{
-    font-size:1.5rem;
-}
-
-.b-crypto_portfolio-trading{
-    display:flex;
-    align-items: center;
-}
-.b-crypto_portfolio-trading-img{
-    width:8rem;
-    height:8rem;
-    background:url("./images/trade.png");
-    background-size:cover;
-    margin-right:4rem;
-}
-.b-crypto_portfolio-trading-content{
-    height:8rem;
-    width:50rem;
-}
-.b-crypto_portfolio-trading-content > h1{
-    font-size:2.5rem;
-    margin-bottom:1rem;
-}
-.b-crypto_portfolio-trading-content > p{
-    font-size:1.5rem;
-}
-
-.b-crypto_portfolio-btn{
-    height:4.6rem;
+.b-crypto_portfolio-account-img-1 img{
+    height:100%;
     width:100%;
 }
-.b-crypto_portfolio_btn-get_started{
-    height:100%;
-    background:var(--custom_yellowLight);
-    display:grid;
-    place-items: center;
-    width:18rem;
-    font-size:1.5rem;
-    border-radius: 4px;
+.b-crypto_portfolio-account-img-2{
+    width:8rem;
+    height:8rem;
 }
+.b-crypto_portfolio-account-img-2 img{
+    height:100%;
+    width:100%;
+}
+.b-crypto_portfolio-account-img-3{
+    width:8rem;
+    height:8rem;
+}
+.b-crypto_portfolio-account-img-3 img{
+    height:100%;
+    width:100%;
+}
+.b-crypto_portfolio-btn{
+    background:var(--custom_yellowLight);
+    height:4rem;
+    width:18rem;
+    border-radius:4px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.4rem;
+}
+
+/*
+.b-crypto_portfolio-account-img-1{
+    background:url("./images/user.png");
+    background-size:cover;
+}
+.b-crypto_portfolio-account-img-2{
+    background:url("./images/check.png");
+    background-size:cover;
+}
+.b-crypto_portfolio-account-img-3{
+    background:url("./images/trade.png");
+    background-size:cover;
+}
+*/
+
+
+
+/* EXPLORE */
+
+
 .b-explore{
     height:98rem;
     padding:12rem 8rem;
@@ -1410,8 +1439,17 @@ body{
     .b-stats{
         width:100%;
     }
-    
-    
+    .b-cryptocurrencies{
+        width:100%;
+    }
+    .b-signup_box{
+        width:100%;
+    }
+    .b-crypto_portfolio{
+        width:100%;
+    }
+
+
 }
 
 
@@ -1461,6 +1499,23 @@ body{
     .b-signup_box{
         padding:0 2.5rem;
         width:100%;
+    }
+
+    .b-crypto_portfolio{
+        grid-template-columns:1fr;
+        grid-template-rows: .3fr 1fr 1fr;
+    }
+    .b-crypto_portfolio-header{
+        grid-column:1/3;
+        max-height: 20rem;
+    }
+    .b-crypto_portfolio-img{
+        height:45rem;
+        grid-column: 1/3;
+        grid-row:2/3;
+    }
+    .b-crypto_portfolio-content{
+        margin-top:0;
     }
     
 }
@@ -1587,6 +1642,13 @@ body{
     .b-signup-btn{
         height:4rem;
         width: 100%;
+    }
+
+    .b-crypto_portfolio-header h1{
+        font-size:2.6rem;
+    }
+    .b-crypto_portfolio-header p{
+        font-size:1.4rem;
     }
 }
 
