@@ -1502,6 +1502,7 @@ body{
     }
 
     .b-crypto_portfolio{
+        width:100%;
         grid-template-columns:1fr;
         grid-template-rows: .3fr 1fr 1fr;
     }
@@ -1649,6 +1650,12 @@ body{
     }
     .b-crypto_portfolio-header p{
         font-size:1.4rem;
+    }
+    .b-crypto_portfolio-header{
+        padding-left:1.5rem;
+    }
+    .b-crypto_portfolio-content{
+        padding-left:1.5rem;
     }
 }
 
