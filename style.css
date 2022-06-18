@@ -618,7 +618,6 @@ body{
     position:relative;
     display:grid;
     place-items:center;
-    margin-bottom: 5rem;
 }
 .b-crypto_portfolio{
     width:95%;
@@ -627,11 +626,9 @@ body{
     grid-template-columns: 1.1fr 1fr;
     grid-template-rows: 1fr 2fr;
     color:var(--textInputDark);
-    /* background:lightgreen;  */
     gap:1rem;
 }
 .b-crypto_portfolio-header{
-    /* background:red; */
     height:10rem;
     padding-left:3rem;
     padding-right:1rem;
@@ -641,11 +638,9 @@ body{
     display:flex;
     align-items:center;
     font-size:3.5rem;
-    /*background:lightseagreen; */
 }
 .b-crypto_portfolio-header p{
     height:4rem;
-    /*background:lightsteelblue;*/
     font-size:2rem;
     font-weight:300;
     display:flex;
@@ -653,7 +648,6 @@ body{
 }
 
 .b-crypto_portfolio-img{
-    /*background:yellow; */
     grid-row:1/3;
     grid-column:2/3;
     height:65rem;
@@ -667,7 +661,6 @@ body{
     justify-content:center;
 }
 .b-crypto_portfolio-content{
-    /* background:magenta;  */
     padding-left:3rem;
     margin-top:-5rem;
     display:flex;
@@ -676,7 +669,6 @@ body{
 }
 .b-crypto_portfolio-account{
     height: 12rem;
-    /* background:sienna;  */
     display:flex;
 }
 
@@ -685,16 +677,13 @@ body{
     height:8rem;
     width:calc(100% - 12rem);
     padding-left:2rem;
-    /* background:red;  */
 }
 .b-crypto_portfolio-account-content h1{
     height:3rem;
-    /* background:lightgreen;  */
     font-size:2rem;
 }
 .b-crypto_portfolio-account-content p{
     height:5rem;
-    /* background:lightseagreen;  */
     font-size:1.5rem;
 }
 .b-crypto_portfolio-account-img-1,
@@ -726,190 +715,122 @@ body{
     font-size:1.4rem;
 }
 
-/*
-.b-crypto_portfolio-account-img-1{
-    background:url("./images/user.png");
-    background-size:cover;
-}
-.b-crypto_portfolio-account-img-2{
-    background:url("./images/check.png");
-    background-size:cover;
-}
-.b-crypto_portfolio-account-img-3{
-    background:url("./images/trade.png");
-    background-size:cover;
-}
-*/
+
 
 
 
 /* EXPLORE */
 
 
+.b-explore-wrapper{
+    height:100%;
+    width:100%;
+    position:relative;
+    display:grid;
+    place-items:center;
+}
 .b-explore{
-    height:98rem;
-    padding:12rem 8rem;
+    width:95%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content(30rem) 1fr;
+    gap:1rem;
     color:var(--textInputDark);
 }
 .b-explore-header{
     font-size:2.5rem;
-    height:15rem;
+    height:30rem;
+    display:flex;
+    align-items:center;
+    padding-top: 7rem;
+    padding-left:3rem;
 }
+.b-explore-card{
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom:5rem;
+    column-gap: 2rem;
+    padding-left:3rem;
+    padding-right:3rem;
+}
+
 .b-explore-cards{
     width:100%;
-    display:flex;
-    justify-content:space-between;
-}
-.b-explore-cards-1{
-    width:38rem;
     height:60rem;
+    border-radius:8px;
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:10rem;
+}
+.b-explore-cards:hover{
+    box-shadow:0 0 3px 3px rgba(0,0,0,.1);
+}
+.b-explore-card_caption{
+    flex-direction:column;
     display:flex;
-    border-radius: 8px;
-    flex-direction: column;
-    overflow:hidden;
-    justify-content: space-between;
 }
-.b-explore-cards-1-img{
-    height:25rem;
-    width: 38rem;
-    padding:20px 20px;
-}
-.b-explore-cards-1-img-1{
-    height:100%;
-    width:100%;
-}
-.b-explore-cards-2{
-    border-radius: 8px;
-    overflow:hidden;
-    width:38rem;
-    height:60rem;
+.b-explore-card_img:nth-child(2){
     display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items:flex-end;
 }
-.b-explore-cards-2-img{
-    height:25rem;
-    width: 38rem;
-    padding:20px 20px;
-}
-.b-explore-cards-2-img-2{
-    height:100%;
+.b-explore-card_img img{
+    height:20rem;
     width:100%;
+    display:block;
 }
-.b-explore-cards-3{
-    width:38rem;
-    height:60rem;
-    border-radius: 8px;
-    overflow:hidden;
+[class ^= "b-explore-card_caption_wrapper"]{
     display:flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-.b-explore-cards-3-img{
-    height:25rem;
-    width: 38rem;
-    padding:20px 20px;
+.b-explore-card_caption_wrapper-1{
+    align-items: flex-end;
 }
-.b-explore-cards-3-img-3{
-    height:100%;
+.b-explore-card_caption_wrapper-3{
+    align-items: flex-end;
+}
+
+.b-explore-card_caption-b h1{
+    font-size:2.5rem;
+    padding-bottom:1rem;
     width:100%;
 }
-.b-explore-cards-content{
-    height:23rem;
+.b-explore-card_caption-b p{
+    font-size:1.6rem;
     width:100%;
+    color:var(--textLightColor);
 }
-.b-explore-cards-content-main{
-    padding:20px 20px;
-    padding-top:50px ;
-    position: relative;    
-}
-.b-explore-cards-content-main-box{
-    height:12rem;
-    transform:translateY(25px);
-}
-.b-explore-cards-1:hover .b-explore-cards-content-main-box{
-    transform:translateY(0);
-}
-.b-explore-cards-1:hover .b-explore-cards-content--1--learn_more{
-    display: block;
-}
-.b-explore-cards-content-main-box>h1{
-    font-size:3rem;
-    margin-bottom:8px;
-}
-.b-explore-cards-content-main-box>p{
-    font-size:1.7rem;
-}
-.b-explore-cards-content--1--learn_more{
-    margin-top: 8px;
-    font-size:1.8rem;
+.b-explore-card_caption--learn{
+    width:100%;
+    font-size:1.6rem;
+    padding-top: 1rem;
+    display:flex;
+    align-items:flex-end;
     display:none;
-    color:var(--custom_yellowLight);
+    color:var(--custom_yellowText);
 }
-
-.b-explore-cards-content-main-2{
-    padding:20px 20px;
-    position: relative;    
+.b-explore-cards:hover .b-explore-card_caption--learn{
+   display:block;
 }
-.b-explore-cards-content-main-box-2{
-    height:16rem;
+.b-explore-card_caption--learn .arrow{
+    font-weight:900;
 }
-.b-explore-cards-content-main-box-2>h1{
-    font-size:3rem;
-    margin-bottom:8px;
-}
-.b-explore-cards-content-main-box-2>p{
-    font-size:1.7rem;
-}
-
-.b-explore-cards-content--2--learn_more{
-    margin-top: 8px;
-    font-size:1.8rem;
-    display:none;
-    color:var(--custom_yellowLight);
-}
-.b-explore-cards-2:hover .b-explore-cards-content--2--learn_more{
-    display: block;
+.b-explore-card_caption--learn .learn{
+    font-weight:light;
 }
 
 
-.b-explore-cards-content-main-3{
-    padding:20px 20px;
-    padding-top: 50px;
-    position: relative;    
-}
-.b-explore-cards-content-main-box-3{
-    height:6rem;
-    margin-top: 45px;
-}
-.b-explore-cards-content-main-box-3>h1{
-    font-size:3rem;
-    margin-bottom:8px;
-}
-.b-explore-cards-content-main-box-3>p{
-    font-size:1.7rem;
-}
 
-.b-explore-cards-content--3--learn_more{
-    margin-top: 12px;
-    font-size:1.8rem;
-    display:none;
-    color:var(--custom_yellowLight);
-}
-.b-explore-cards-content-main-box-3{
-    transform:translateY(30px);
-}
-.b-explore-cards-3:hover .b-explore-cards-content--3--learn_more{
-    display: block;
-}
-.b-explore-cards-3:hover .b-explore-cards-content-main-box-3{
-    transform:translateY(0);
-}
-.b-explore-cards-1:hover,.b-explore-cards-2:hover,.b-explore-cards-3:hover{
-    box-shadow:0 1px 3px rgba(0,0,0,.3);
-}
 
-.b-trade{
+
+
+/* TRADE  */
+
+
+.trade{
     color:var(--textInputDark);
     width:100%;
     position: relative;
@@ -1441,7 +1362,9 @@ body{
     .b-crypto_portfolio{
         width:100%;
     }
-
+    .b-explore{
+        width:100%;
+    }
 
 }
 
@@ -1519,12 +1442,57 @@ body{
     }
     
     
+    .b-explore-card{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap:4rem;
+    }
+    .b-explore-cards{
+        width:100%;
+        height:30rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap:5rem;
+    }
+    [class ^= "b-explore-card_caption_wrapper"]{
+        align-items:center;
+    }
+    .b-explore-card_caption{
+        display:flex;
+        height:max-content;
+        padding-right:1rem;
+    }
+    .b-explore-card_img{
+        display:flex;
+        align-items:center;
+    }
+    .b-explore-card_img:nth-child(2){
+        display:flex;
+        align-items:center;
+        justify-content: right;
+    }
+
+    .b-explore-card_img img{
+        width:25rem;
+        height:15rem;
+    }
+    .b-explore-card_caption--learn{
+        display:block;
+        font-size:1.5rem;
+    }
+    .b-explore-card_caption-b h1{
+        font-size:2.2rem;
+    }
+    .b-explore-card_caption-b p{
+        font-size:1.5rem;
+    }
 }
 
 @media screen and (max-width:900px){
     .b-header_nav_1{
         display:none;
     }
+
 }
 
 @media screen and (max-width:768px){
@@ -1684,6 +1652,61 @@ body{
     .b-crypto_portfolio-btn{
         width:100%;
     }
+
+
+    .b-explore-card{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap:4rem;   
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+    }
+    .b-explore-header{
+        padding-left:1.5rem;
+        font-size:1.8rem;
+    }
+    .b-explore-cards{
+        width:100%;
+        height:55rem;
+        grid-template-columns:1fr;
+        grid-template-rows: 1.5fr 1fr;
+        gap:2rem;
+    }
+    [class ^= "b-explore-card_caption_wrapper"]{
+        align-items:center;
+        justify-content:center;
+    }
+    .b-explore-card_caption{
+        display:flex;
+        height:max-content;
+        padding-right:1rem;
+    }
+    .b-explore-card_img{
+        display:flex;
+        align-items:center;
+    }
+    .b-explore-card_img:nth-child(2){
+        display:flex;
+        align-items:center;
+        justify-content: right;
+    }
+
+    .b-explore-card_img img{
+        width:100%;
+        height:100%;
+    }
+    .b-explore-card_caption--learn{
+        display:block;
+        font-size:1.4rem;
+    }
+    .b-explore-card_caption-b h1{
+        font-size:2rem;
+    }
+    .b-explore-card_caption-b p{
+        font-size:1.4rem;
+    }
+
+
 }
 
 
