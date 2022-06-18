@@ -314,7 +314,7 @@ body{
     height:100%;
     display:flex;
     color:var(--textInputDark);
-    max-width:1350px;
+    max-width:1400px;
     flex-direction:row;
 }
 .b-get_started--content{
@@ -406,6 +406,7 @@ body{
 }
 .b-stats{
     width:95%;
+    max-width:1400px;
     height:100%;
     display:flex;
     color:var(--textInputDark);
@@ -465,6 +466,7 @@ body{
 .b-cryptocurrencies{
     color:var(--textInputDark);
     width:95%;
+    max-width:1400px;
     height:100%;
     position: relative;
     height:62rem;
@@ -583,6 +585,7 @@ body{
 
 .b-signup_box{
     width:95%;
+    max-width:1400px;
     height:12rem;
     padding-left:3rem;
     display:flex;
@@ -621,6 +624,7 @@ body{
 }
 .b-crypto_portfolio{
     width:95%;
+    max-width:1400px;
     padding-top:15rem;
     display:grid;
     grid-template-columns: 1.1fr 1fr;
@@ -731,6 +735,7 @@ body{
 }
 .b-explore{
     width:95%;
+    max-width:1400px;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content(30rem) 1fr;
