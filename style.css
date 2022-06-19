@@ -850,7 +850,6 @@ body{
     grid-template-rows: 25rem 1fr;
     color:var(--textInputDark);
     /* background:blue; */
-    padding-bottom:5rem;
 }
 
 .b-trade-header{
@@ -883,9 +882,6 @@ body{
     height:5rem;
     justify-content:right;
 }
-.b-trade-content{
-    /* background:lightgreen; */
-}
 
 .b-trade-content{
     display:grid;
@@ -906,17 +902,14 @@ body{
 }
 
 .b-trade-content-section{
-    /* background:yellow; */
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
     padding:5rem 2rem;
 }
 .b-trade--download-section_1{
-    /* background:pink; */
 }
 .b-trade--download-section_2{
-    /* background:magenta; */
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -928,7 +921,6 @@ body{
     display:grid;
     place-items:center;
     font-size:3rem;
-    /* background:skyblue; */
     padding-left:1rem;
     width:90%;
 }
@@ -1489,17 +1481,33 @@ body{
         font-size:1.5rem;
     }
 
-    .b-trade-header{
-        grid-template-rows:2fr;
+    .b-trade{
+        grid-template-columns: 1fr;
+        grid-template-rows: 15rem 70rem;
+    }
+    .b-trade-content{
+        display:grid;
         grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .b-trade-content-img{
+        width:100%;
+        height:40rem;
+    }
+    .b-trade-header{
+        grid-template-rows:1fr;
+        grid-template-columns:1fr;
+        height:100%;
     }
     .b-trade-header--sub{
         justify-content:left;
         padding-top:1rem;
     }
+
+    
     .b-trade-content-img div{
         background:url("./images/binance-phone-img-2.png");
-        background-size:contain;
+        background-size:50% 100%;
         background-repeat:no-repeat;
         background-position:center;
     }
@@ -1745,19 +1753,20 @@ body{
     .b-trade--download-section_2 .row:nth-child(7){
         display:none;
     }
-    .b-trade-content{
-        grid-template-columns: 1fr;
-        grid-template-rows:1fr 1fr;
+    
+    .b-trade-content-section{
+        
+        padding:2rem 1.5rem;
     }
     
-    .b-trade-content-img div{
+     .b-trade-content-img div{
         background:url("./images/binance-phone-img-3.png");
-        background-size:60% 80%;
+        background-size:50% 80%;
         background-repeat:no-repeat;
         background-position:center;
     }
     .b-trade-content-section{
-        grid-template-rows: 11rem 1fr;
+        grid-template-rows: 11rem 5rem;
     }
     .b-trade--download-section_2{
         grid-row:1/2;
