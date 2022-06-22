@@ -841,6 +841,7 @@ body{
     position:relative;
     display:grid;
     place-items:center;
+    padding-bottom:5rem;
 }
 .b-trade{
     width:95%;
@@ -849,7 +850,6 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 25rem 1fr;
     color:var(--textInputDark);
-    /* background:blue; */
 }
 
 .b-trade-header{
@@ -863,9 +863,6 @@ body{
     grid-template-columns: 2fr 1fr;
 }
 
-.b-trade-header--main{
-    /* background:dodgerblue; */
-}
 
 .b-trade-header--main > h1{
     font-size:3.5rem;
@@ -907,8 +904,7 @@ body{
     grid-template-rows: 1fr 2fr;
     padding:5rem 2rem;
 }
-.b-trade--download-section_1{
-}
+
 .b-trade--download-section_2{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -960,149 +956,104 @@ body{
 
 
 /* TRUSTED CRYPTO */
+
+
+
+.b-trusted_crypto-exchange-wrapper{
+    height:100%;
+    width:100%;
+    position:relative;
+    display:grid;
+    place-items:center;
+}
+
 .b-trusted_crypto-exchange{
-    color:var(--textInputDark);
-    width:100%;
-    position: relative;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    margin-bottom: 4rem;
-    margin-top: 8rem;
+    width:95%;
+    max-width:1400px;
+    display:grid;
+    padding-bottom:4rem;
 }
-.b-trusted_crypto-exchange-section-1{
-    height:8rem;
-    width:100%;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+.b-trusted_crypto-exchange__header{
+    height:30rem;
+    display:grid;
+    padding-top:12rem;
+    padding-left:3rem;
+    background: red; 
+    display:grid;
+    grid-template-rows:1fr;
+    grid-template-columns: 2fr .3fr;
+}
+.b-trusted_crypto-exchange__header-2{
+    font-size:1.4rem;
+    padding-top:1rem;
+    justify-content: center;
     display:flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-.b-trusted_crypto-exchange-section-1--header{
-    display: flex;
-    height:4rem;
-    justify-content: space-between;
+.b-trusted_crypto-exchange__header-1 h1{
+    font-size:3.5rem;
+    font-weight:bolder;
 }
-.b-trusted_crypto-exchange-section-1--header> h1{
-    font-size:3.8rem;
-}
-.b-trusted_crypto-exchange-section-1--header> div{
-    font-size:1.5rem;
-    font-weight:600;
-    margin-top:5px;
-    color:#888;
-}
-.b-trusted_crypto-exchange-section-1--sub-header{
-    font-size:2rem;
-}
-.b-trusted_crypto-exchange-section-2{
-    width:100%;
-    height:50rem;
-    display:flex;
-    justify-content: space-between;
-    margin-top:5rem;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1{
-    height:100%;
-    width:55%;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-2{
-    height:100%;
-    width:40%;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info{
-    width:100%;
-    height:100%;
-}
-
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-1{
-    width:100%;
-    height:12rem;
-    display: flex;
-    align-items: center;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-2{
-    width:100%;
-    height:12rem;
-    display: flex;
-    align-items: center;
-    margin-top:4rem;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-3{
-    width:100%;
-    height:12rem;
-    display: flex;
-    margin-top:4rem;
-    align-items: center;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-1--image{
-    width:10rem;
+.b-trusted_crypto-exchange__header-1 p{
     height:6rem;
+    background:lightgreen;
+    font-size:1.9rem;
+    padding-top:1rem;
 }
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-1--summary{
-    margin-left:35px;
+.b-trusted_crypto-exchange__content{
     height:100%;
-    display:flex;
-    justify-content:space-around;
-    flex-direction:column;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-2--image{
-    width:14rem;
-    height:6rem;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-2--summary{
-    margin-left:35px;
-    height:100%;
-    display:flex;
-    justify-content:space-around;
-    flex-direction:column;
-}
-
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-3--image{
-    width:14rem;
-    height:6rem;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-3--summary{
-    margin-left:35px;
-    height:100%;
-    display:flex;
-    justify-content:space-around;
-    flex-direction:column;
-}
-
-
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-1--summary>h1{
-    font-size: 2rem;
-    margin-top:15px;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-1--summary>p{
-    font-size: 1.6rem;
-    margin-top:-15px;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-2--summary>h1{
-    font-size: 2rem;
-    margin-top:15px;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-2--summary>p{
-    font-size: 1.6rem;
-    margin-top:-15px;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-3--summary>h1{
-    font-size: 2rem;
-    margin-top:15px;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-1__info-3--summary>p{
-    font-size: 1.6rem;
-    margin-top:-15px;
-}
-.b-trusted_crypto-exchange-section-2_sub__section-2>div{
-    height:27rem;
     width:100%;
-    background:url("./images/binance-trusted-section.png");
-    background-size:cover;
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.b-trusted_crypto-exchange__content-1{
+    background:lightgreen;
+    height:45rem;
+    padding-left: 3rem;
+    display:flex;
+    justify-content: space-between;
+    flex-direction:column;
+    
+}
+.b-trusted_crypto-exchange__content-2{
+    background:dodgerblue;
+    height:45rem;
+    display:flex;
+    justify-content:center;
+    padding-left:1rem;
+}
+.b-trusted_crypto-exchange__content-2 img{
+    height:35rem;
+    width:55rem;
+}
+.b-trusted_crypto-exchange__content-1_wrapper{
+    width:100%;
+    height:13rem;
+    background:yellow;
+    display:flex;
+    align-items:center;
+}
+
+.b-trusted_crypto-exchange__content-1_wrapper-img{
+    height:6rem;
+    width:9rem;
+    background:red;
+}
+.b-trusted_crypto-exchange__content-1_wrapper-caption{
+    width:calc(100% - 9rem);
+    padding-left:2rem;
+}
+.b-trusted_crypto-exchange__content-1_wrapper-caption h1{
+    font-size:2.1rem;
+    padding-bottom:1rem;
+}
+.b-trusted_crypto-exchange__content-1_wrapper-caption p{
+    font-size:1.6rem;
 }
 
 
+
+/* NEED HELP */
 .b-need-help{
     color:var(--textInputDark);
     width:100%;
@@ -1357,7 +1308,9 @@ body{
     .b-trade{
         width:100%;
     }
-
+    .b-trusted_crypto-exchange{
+        width:100%;
+    }
     
 
 }
@@ -1506,8 +1459,8 @@ body{
 
     
     .b-trade-content-img div{
-        background:url("./images/binance-phone-img-2.png");
-        background-size:50% 100%;
+        background:url("./images/binance-phone-img-3.png");
+        background-size:40% 80%;
         background-repeat:no-repeat;
         background-position:center;
     }
@@ -1516,6 +1469,25 @@ body{
     .b-trade--download-section_2 .row:nth-child(6){
         display:none;
     }
+
+    .b-trusted_crypto-exchange__header{
+        grid-template-rows:.6fr .3fr;
+        grid-template-columns: 1fr;
+    }
+    .b-trusted_crypto-exchange__header-2{
+        justify-content: flex-start;
+    }
+
+
+    .b-trusted_crypto-exchange__content{
+        grid-template-rows: 35rem 1fr;
+        grid-template-columns: 1fr;
+    }
+    .b-trusted_crypto-exchange__content-2{
+        grid-row:1/2;
+        height:35rem;
+    }
+    
 }
 
 @media screen and (max-width:900px){
@@ -1778,6 +1750,35 @@ body{
     }
     .b-trade--download-section_1{
         max-width:100%;
+    }
+
+
+    .b-trusted_crypto-exchange__header{
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+    }
+    .b-trusted_crypto-exchange__header-1 h1{
+        font-size:2.5rem;
+    }
+    .b-trusted_crypto-exchange__header-1 p{
+        font-size:1.4rem;
+    }
+
+    .b-trusted_crypto-exchange__content{
+        grid-template-rows: 25rem 1fr;
+        grid-template-columns: 1fr;
+    }
+    .b-trusted_crypto-exchange__content-1{
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    .b-trusted_crypto-exchange__content-2{
+        grid-row:1/2;
+        height:25rem;
+    }
+    .b-trusted_crypto-exchange__content-2 img{
+        height:25rem;
+        width:35rem;
     }
 }
 
