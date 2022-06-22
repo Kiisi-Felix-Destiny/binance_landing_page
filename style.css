@@ -841,7 +841,6 @@ body{
     position:relative;
     display:grid;
     place-items:center;
-    padding-bottom:5rem;
 }
 .b-trade{
     width:95%;
