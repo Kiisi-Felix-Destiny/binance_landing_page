@@ -1752,8 +1752,8 @@ body{
         font-size:1.4rem;
     }
     .b-trusted__content--img img{
-        width:35rem;
-        height:20rem;
+        width:25rem;
+        height:15rem;
     }
     .b-trusted__content--main_section{
         flex-direction:column;
