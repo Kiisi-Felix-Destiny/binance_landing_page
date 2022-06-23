@@ -28,8 +28,8 @@ body{
     height:64px;
     position:relative;
     display:flex;
-    padding-right:2rem;
-    padding-left:2rem;
+    padding-right:1.5rem;
+    padding-left:1.5rem;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
     color:var(--textInputDark);
@@ -958,13 +958,14 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 28rem 1fr;
     color:var(--textInputDark);
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 .b-trusted__header{
    height:28rem; 
    padding-top:15rem;
    display:grid;
    grid-template-columns: 90% 10%;
-   padding-left:3rem ;
 }
 
 .b-trusted__header--sub{
@@ -981,22 +982,47 @@ body{
     font-size:1.8rem;
 }
 .b-trusted__content{
-    background:lightgreen;
     display:grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:50rem;
 }
 .b-trusted__content--img{
-    background:red; 
     display:flex;
     justify-content:center;
-}
-.b-trusted__content--main{
-    background:dodgerblue;
 }
 .b-trusted__content--img img{
     width:55rem;
     height:35rem;
+}
+
+.b-trusted__content--main_section{
+    width:100%;
+    display:flex;
+    margin-top:3.5rem;
+    justify-content:space-between;
+}
+.b-trusted__content--main_section--img{
+    width:10rem;
+    height:10rem;
+}
+.b-trusted__content--main_section--img .circle{
+    border-radius:50%;
+}
+.b-trusted__content--main_section--img img{
+    width:100%;
+    height:100%;
+}
+
+.b-trusted__content--main_section--details{
+    width:calc(100% - 14rem);
+}
+.b-trusted__content--main_section--details h1{
+    font-size:2rem;
+    font-weight:600;
+    padding-bottom:1rem;
+}
+.b-trusted__content--main_section--details p{
+    font-size:1.5rem;
 }
 
 /* NEED HELP */
@@ -1444,7 +1470,7 @@ body{
         display:none;
     }
     .b-trusted__content{
-        grid-template-rows:1fr 1fr;
+        grid-template-rows:1fr 40rem;
         grid-template-columns: 1fr;
     }
     .b-trusted__content--img{
@@ -1709,24 +1735,34 @@ body{
 
     .b-trusted{
         grid-template-rows: 18rem 1fr;
+        padding-left:1.5rem;
+        padding-right:1.5rem;
     }
     
     .b-trusted__header--main h1{
         font-size:2.5rem;
     }
     .b-trusted__header{
-        background:red;
         height:18rem; 
         padding-top:5rem;
         display:grid;
         grid-template-columns: 90% 10%;
-        padding-left:1.5rem ;
-        padding-right:1.5rem ;
     }
     .b-trusted__header--main p{
         font-size:1.4rem;
     }
-    
+    .b-trusted__content--img img{
+        width:35rem;
+        height:20rem;
+    }
+    .b-trusted__content--main_section{
+        flex-direction:column;
+    }
+    .b-trusted__content--main_section--details{
+        width:100%;
+    }
+
+
 }
 
 
