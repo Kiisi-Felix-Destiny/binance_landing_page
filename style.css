@@ -398,6 +398,9 @@ body{
     flex-direction:row;
     position:relative;
     align-items: center;
+    padding-top:5rem;
+    padding-left:3rem;
+    padding-right:3rem;
 }
 .b-stats_data{
     height:25rem;
@@ -407,7 +410,6 @@ body{
     grid-template-rows:repeat(1, 1fr);
 }
 .b-stats_data--global{
-    padding-left: 3rem;
     display:flex;
     align-items: center;
     justify-content:center;
@@ -419,6 +421,7 @@ body{
     justify-content:center;
     flex-direction:column;
     align-items:center;
+    padding-right:.5rem;
 }
 
 .b-stats_data .b-stats_data--global div h1{
@@ -1481,6 +1484,10 @@ body{
     }
 
 
+    .b-stats{
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+    }
 
     .b-stats_data .b-stats_data--global div h1{
         font-size:2.6rem;
