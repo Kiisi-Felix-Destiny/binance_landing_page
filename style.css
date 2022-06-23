@@ -1015,6 +1015,7 @@ body{
 
 .b-trusted__content--main_section--details{
     width:calc(100% - 14rem);
+    padding-top:1rem;
 }
 .b-trusted__content--main_section--details h1{
     font-size:2rem;
