@@ -7,6 +7,8 @@
     --textLightColor:#474D57;
     --textUniqueRedColor:rgb(207, 48, 74);
     --textUniqueGreenColor:rgb(3, 166, 109);
+    --mainHeaderSize:3.6rem;
+    --mainHeaderSizeSmall:2.5rem;
 }
 *{
     margin:0;
@@ -198,7 +200,8 @@ body{
 .b-sidenav{
     font-family:'Rubik', sans-serif;
     height:100vh;
-    width:36rem;
+    max-width:36rem;
+    width:100%;
     background:#fff;
     position:fixed;
     top:0;
@@ -226,6 +229,7 @@ body{
     display:flex;
     justify-content: flex-end;
     align-items:center;
+    padding-right:1rem;
 }
 .b-sidenav-wrapper_close-btn{
     height:2.5rem;
@@ -310,84 +314,64 @@ body{
     place-items:center;
 }
 .b-get_started{
+    padding-top:8rem;
+    padding-left: 3rem;
+    padding-right:3rem;
     width:95%;
-    height:100%;
-    display:flex;
+    display:grid;
     color:var(--textInputDark);
     max-width:1400px;
-    flex-direction:row;
+    grid-template-rows:100%;
+    grid-template-columns: 1fr 1fr;
 }
-.b-get_started--content{
-    width:50%;
-    height:55rem;
+.b-get_started-content{
+    width:50rem;
 }
-.b-get_started-i{
-    width:50%;
-    height:55rem;
-    position:relative;
+.b-get_started-content--header{
+    font-size:var(--mainHeaderSize);
+}
+.b-get_started-content--sub{
+    width:100%;
+    max-width:50rem;
+    margin-top:4rem;
     display:flex;
-    align-items:center;
+    justify-content:space-between;
+}
+.b-get_started-content--sub input{
+    height:4.5rem;
+    width:calc(100% - 16.5rem);
+    border-radius:4px;
+    border:1px solid var(--textLightColor);
+    outline:none;
+    background:transparent;
+    padding-left:1rem;
+    color:var(--textLightColor);
+}
+.b-get_started-content--sub input:hover{
+    border:1px solid var(--custom_yellowLight);
+}
+.b-get_started-content--sub .btn{
+    height:4.5rem;
+    background:var(--custom_yellowLight);
+    width:15rem;
+    border-radius:4px;
+    display:flex;
     justify-content: center;
+    align-items:center;
+    font-size:1.6rem;
 }
 .b-get_started-img{
+    position:relative;
     width:100%;
     height:100%;
-    max-height:45rem;
-    min-height:35rem;
-    max-width:55rem;
-    min-width:50rem;
-    background:url("./images/foreground-image-light.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
-.b-get_started-img.b-get_started-dark{
+.b-get_started-img img{
+    max-width:60rem;
     width:100%;
     height:100%;
-    background:url("./images/foreground-image-dark.png");
-    background-size:cover;
-}
-.b-get_started--content-text{
-    font-size:5.5rem;
-    font-weight:bolder;
-    width:80%;
-    letter-spacing: 1.5px;
-    padding-top:5rem;
-    padding-left:3rem;
-}
-.b-get_started--content-box{
-    width:calc(100% - 3rem);
-    height:4.5rem;
-    padding-left:3rem;
-    margin-top:3rem;
-    display:flex;
-    position: relative;
-}
-.b-get_started-input{
-    height:100%;
-    width:30rem;
-    outline:none;
-    border-radius: 3px;
-    border:1px solid #bbb;
-    padding-left:10px;
-    margin-right:1.5rem;
-}
-.b-get_started-input:focus{
-    border:1px solid var(--custom_yellowLight);
+    max-height:50rem;
 }
 
-.b-get_started-input:hover{
-    border:1px solid var(--custom_yellowLight);
-}
-.b-get_started-btn{
-    height:100%;
-    width: 15rem;
-    background:var(--custom_yellowLight);
-    border-radius: 3px;
-    font-size:1.7rem;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
 .b-header_theme{
     cursor: pointer;
 }
@@ -625,7 +609,7 @@ body{
 .b-crypto_portfolio{
     width:95%;
     max-width:1400px;
-    padding-top:15rem;
+    padding-top:10rem;
     display:grid;
     grid-template-columns: 1.1fr 1fr;
     grid-template-rows: 1fr 2fr;
@@ -957,100 +941,60 @@ body{
 /* TRUSTED CRYPTO */
 
 
-
-.b-trusted_crypto-exchange-wrapper{
+.b-trusted-wrapper{
     height:100%;
     width:100%;
     position:relative;
     display:grid;
     place-items:center;
 }
-
-.b-trusted_crypto-exchange{
+.b-trusted{
     width:95%;
     max-width:1400px;
     display:grid;
-    padding-bottom:4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 28rem 1fr;
+    color:var(--textInputDark);
 }
-.b-trusted_crypto-exchange__header{
-    height:30rem;
-    display:grid;
-    padding-top:12rem;
-    padding-left:3rem;
-    background: red; 
-    display:grid;
-    grid-template-rows:1fr;
-    grid-template-columns: 2fr .3fr;
-}
-.b-trusted_crypto-exchange__header-2{
-    font-size:1.4rem;
-    padding-top:1rem;
-    justify-content: center;
-    display:flex;
-}
-.b-trusted_crypto-exchange__header-1 h1{
-    font-size:3.5rem;
-    font-weight:bolder;
-}
-.b-trusted_crypto-exchange__header-1 p{
-    height:6rem;
-    background:lightgreen;
-    font-size:1.9rem;
-    padding-top:1rem;
-}
-.b-trusted_crypto-exchange__content{
-    height:100%;
-    width:100%;
-    display:grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-}
-.b-trusted_crypto-exchange__content-1{
-    background:lightgreen;
-    height:45rem;
-    padding-left: 3rem;
-    display:flex;
-    justify-content: space-between;
-    flex-direction:column;
-    
-}
-.b-trusted_crypto-exchange__content-2{
-    background:dodgerblue;
-    height:45rem;
-    display:flex;
-    justify-content:center;
-    padding-left:1rem;
-}
-.b-trusted_crypto-exchange__content-2 img{
-    height:35rem;
-    width:55rem;
-}
-.b-trusted_crypto-exchange__content-1_wrapper{
-    width:100%;
-    height:13rem;
-    background:yellow;
-    display:flex;
-    align-items:center;
+.b-trusted__header{
+   height:28rem; 
+   padding-top:15rem;
+   display:grid;
+   grid-template-columns: 90% 10%;
+   padding-left:3rem ;
 }
 
-.b-trusted_crypto-exchange__content-1_wrapper-img{
-    height:6rem;
-    width:9rem;
-    background:red;
+.b-trusted__header--sub{
+    font-size:1.6rem;
+    padding-top:1rem;
+    display:flex;
+    justify-content: flex-end;
 }
-.b-trusted_crypto-exchange__content-1_wrapper-caption{
-    width:calc(100% - 9rem);
-    padding-left:2rem;
-}
-.b-trusted_crypto-exchange__content-1_wrapper-caption h1{
-    font-size:2.1rem;
+.b-trusted__header--main h1{
+    font-size:3.5rem;
     padding-bottom:1rem;
 }
-.b-trusted_crypto-exchange__content-1_wrapper-caption p{
-    font-size:1.6rem;
+.b-trusted__header--main p{
+    font-size:1.8rem;
 }
-
-
+.b-trusted__content{
+    background:lightgreen;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:50rem;
+}
+.b-trusted__content--img{
+    background:red; 
+    display:flex;
+    justify-content:center;
+}
+.b-trusted__content--main{
+    background:dodgerblue;
+}
+.b-trusted__content--img img{
+    width:55rem;
+    height:35rem;
+}
 
 /* NEED HELP */
 .b-need-help{
@@ -1262,8 +1206,8 @@ body{
         width:16.5rem;
     }
     .b-header_nav_2-section-2{
-        width:4rem;
-        justify-content: center;
+        width:4.5rem;
+        justify-content: flex-end;
     }
     .b-header_downloads,
     .b-header_english,
@@ -1310,6 +1254,9 @@ body{
     .b-trusted_crypto-exchange{
         width:100%;
     }
+    .b-trusted{
+        width:100%;
+    }
     
 
 }
@@ -1337,11 +1284,25 @@ body{
 @media screen and (max-width:1023px){
 
     .b-get_started{
-        flex-direction: column-reverse;
+        grid-template-rows:1fr auto;
+        grid-template-columns:1fr;
+        padding-top:3rem;
     }
-    .b-get_started--content{
+    .b-get_started-img{
+        grid-row:1/2;
+        display:grid;
+        place-items:center;
+        padding-bottom:3rem;
+    }
+    .b-get_started-img img{
+        max-width:50rem;
         width:100%;
-        height:45rem;
+        height:100%;
+        max-height:40rem;
+    }
+
+    .b-get_started-content{
+        width:100%;
     }
     .b-get_started-i{
         width:100%;
@@ -1469,24 +1430,23 @@ body{
         display:none;
     }
 
-    .b-trusted_crypto-exchange__header{
-        grid-template-rows:.6fr .3fr;
-        grid-template-columns: 1fr;
-    }
-    .b-trusted_crypto-exchange__header-2{
-        justify-content: flex-start;
-    }
 
-
-    .b-trusted_crypto-exchange__content{
-        grid-template-rows: 35rem 1fr;
-        grid-template-columns: 1fr;
-    }
-    .b-trusted_crypto-exchange__content-2{
-        grid-row:1/2;
-        height:35rem;
-    }
     
+    .b-trusted__header{
+        grid-template-columns: 100%;
+        grid-template-rows:1fr 1fr;
+
+    }
+    .b-trusted__header--sub{
+        display:none;
+    }
+    .b-trusted__content{
+        grid-template-rows:1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .b-trusted__content--img{
+        grid-row:1/2;
+    }
 }
 
 @media screen and (max-width:900px){
@@ -1498,43 +1458,29 @@ body{
 
 @media screen and (max-width:768px){
 
-    .b-header{
-        padding-right:1.5rem;
+    .b-get_started{
         padding-left:1.5rem;
+        padding-right:1.5rem;
     }
-
-    .b-get_started-i{
+    .b-get_started-img{
         display:none;
     }
-    .b-get_started--content-text{
-        font-size:4rem;
-        width:95%;
-        letter-spacing: 0px;
-        padding-left:1.5rem;
-        padding-right:1.5rem;
+    .b-get_started-content--header{
+        font-size:var(--mainHeaderSizeSmall);
     }
-    .b-get_started--content-box{
-        width:100% ;
-        height:10.5rem;
-        margin-top:3rem;
-        justify-content: space-between; 
-        flex-direction: column;
-        padding-left:1.5rem;
-        padding-right:1.5rem;
+    .b-get_started-content--sub{
+        flex-direction:column;
+        max-width:100%;
     }
-    .b-get_started-input{
-        height:5.5rem;
+    .b-get_started-content--sub input{
         width:100%;
     }
-    .b-get_started-btn{
-        margin-top:1.2rem;
-        height:6rem;
-        width: 100%;
+    .b-get_started-content--sub .btn{
+        width:100%;
+        margin-top: 1.5rem;
     }
-    .b-stats_data--global{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
+
+
 
     .b-stats_data .b-stats_data--global div h1{
         font-size:2.6rem;
@@ -1726,11 +1672,10 @@ body{
     }
     
     .b-trade-content-section{
-        
         padding:2rem 1.5rem;
     }
     
-     .b-trade-content-img div{
+    .b-trade-content-img div{
         background:url("./images/binance-phone-img-3.png");
         background-size:50% 80%;
         background-repeat:no-repeat;
@@ -1750,35 +1695,31 @@ body{
     .b-trade--download-section_1{
         max-width:100%;
     }
+    
 
 
-    .b-trusted_crypto-exchange__header{
-        padding-left:1.5rem;
-        padding-right:1.5rem;
+
+
+    .b-trusted{
+        grid-template-rows: 18rem 1fr;
     }
-    .b-trusted_crypto-exchange__header-1 h1{
+    
+    .b-trusted__header--main h1{
         font-size:2.5rem;
     }
-    .b-trusted_crypto-exchange__header-1 p{
+    .b-trusted__header{
+        background:red;
+        height:18rem; 
+        padding-top:5rem;
+        display:grid;
+        grid-template-columns: 90% 10%;
+        padding-left:1.5rem ;
+        padding-right:1.5rem ;
+    }
+    .b-trusted__header--main p{
         font-size:1.4rem;
     }
-
-    .b-trusted_crypto-exchange__content{
-        grid-template-rows: 25rem 1fr;
-        grid-template-columns: 1fr;
-    }
-    .b-trusted_crypto-exchange__content-1{
-        padding-left:1rem;
-        padding-right:1rem;
-    }
-    .b-trusted_crypto-exchange__content-2{
-        grid-row:1/2;
-        height:25rem;
-    }
-    .b-trusted_crypto-exchange__content-2 img{
-        height:25rem;
-        width:35rem;
-    }
+    
 }
 
 
