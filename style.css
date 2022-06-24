@@ -322,7 +322,7 @@ body{
     color:var(--textInputDark);
     max-width:1400px;
     grid-template-rows:100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 100%;
 }
 .b-get_started-content{
     width:50rem;
@@ -1765,4 +1765,8 @@ body{
     }
 }
 
-
+@media screen and (max-width:328px){
+    .b-get_started-content--header{
+        font-size:1.8rem;
+    }    
+}
