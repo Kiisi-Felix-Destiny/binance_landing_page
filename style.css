@@ -1755,7 +1755,7 @@ body{
 
     .b-start-earning{
         padding-left:1.5rem;
-        padding-right:1rem;
+        padding-right:1.5rem;
     }
     .b-start-earning--header{
         font-size:var(--mainHeaderSizeSmall);
