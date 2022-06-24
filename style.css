@@ -1726,8 +1726,12 @@ body{
     .b-help{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        grid-template-rows: 5rem calc(100% - 10rem);
     }
-
+    .b-help__header h1{
+        font-size:var(--mainHeaderSizeSmall);
+    }
+    
     .b-help__content{
         display:grid;
         grid-template-columns:1fr;
