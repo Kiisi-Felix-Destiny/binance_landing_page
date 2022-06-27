@@ -332,9 +332,7 @@ body{
 .b-sidenav-wrapper_section-3__theme-wrapper--1>div{
     color:rgb(30, 35, 41);
 }
-.b-sidenav-wrapper_section-3__theme-wrapper--2{
-    
-}
+
 .b-sidenav_darktheme{
     height:2.6rem;
     width:4.2rem;
@@ -344,8 +342,10 @@ body{
     display:flex;
     justify-content: flex-start;
 }
+
 .b-sidenav_darktheme.sidenav_effect{
     justify-content:flex-end;
+    background:rgb(71, 77, 87);
 }
 .sidenav_darktheme_box{
     height:1.75rem;
