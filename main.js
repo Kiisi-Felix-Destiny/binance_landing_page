@@ -36,6 +36,9 @@ let closeBtn = document.querySelector(".b-sidenav-wrapper_close-btn");
 let sidenav = document.querySelector(".b-sidenav");
 let modal = document.querySelector(".b-modal");
 
+let sidenavDarktheme = document.querySelector(".b-sidenav_darktheme");
+let sidenavDarkthemeIcon = document.querySelector(".sidenav_darktheme_box span")
+
 
 menuBar.onclick = () =>{
     sidenav.classList.add("show-hide")  
@@ -51,6 +54,17 @@ modal.onclick = () =>{
     sidenav.classList.remove("show-hide")  
     modal.classList.remove("show-hide") 
     document.body.style.overflowY = 'visible'
+}
+
+sidenavDarktheme.onclick = () =>{
+    if(sidenavDarkthemeIcon.textContent == 'light_mode'){
+        sidenavDarkthemeIcon.textContent = 'dark_mode'
+        sidenavDarktheme.classList.add("sidenav_effect")
+    }
+    else{
+        sidenavDarktheme.classList.remove("sidenav_effect");
+        sidenavDarkthemeIcon.textContent = 'light_mode';
+    }
 }
 
 

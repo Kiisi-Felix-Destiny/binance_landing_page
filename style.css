@@ -299,10 +299,68 @@ body{
     font-size:1.6rem;
 }
 .b-sidenav-wrapper_section-2__buy-crypto-wrapper--1>div{
-    color:#1E2329;
+    color:rgb(30, 35, 41);
 }
 .b-sidenav-wrapper_section-2__buy-crypto-wrapper--2{
     color:#1E2329 !important;
+}
+/* sid nav section 3*/
+.b-sidenav-wrapper_section-3{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.b-sidenav-wrapper_section-3__theme{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.b-sidenav-wrapper_section-3__theme:hover{
+    background:rgb(245, 245, 245);
+}
+
+.b-sidenav-wrapper_section-3__theme-wrapper{
+    width:94%;
+    height:6rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size:1.6rem;
+}
+.b-sidenav-wrapper_section-3__theme-wrapper--1>div{
+    color:rgb(30, 35, 41);
+}
+.b-sidenav-wrapper_section-3__theme-wrapper--2{
+    
+}
+.b-sidenav_darktheme{
+    height:2.6rem;
+    width:4.2rem;
+    background:lavender;
+    border-radius:1.2rem;
+    padding:4.2px 3px;
+    display:flex;
+    justify-content: flex-start;
+}
+.b-sidenav_darktheme.sidenav_effect{
+    justify-content:flex-end;
+}
+.sidenav_darktheme_box{
+    height:1.75rem;
+    width:1.75rem;
+    background:#fff;
+    border-radius:1.2rem;
+    color:rgb(240, 185, 11);
+    position:relative;
+    display:grid;
+    place-items:center;
+    box-shadow:rgb(20 21 26 / 4%) 0px 1px 2px, rgb(71 77 87 / 4%) 0px 3px 6px, rgb(20 21 26 / 10%) 0px 0px 1px;
+
+}
+.sidenav_darktheme_box span{
+    font-size:17px;
 }
 
 
