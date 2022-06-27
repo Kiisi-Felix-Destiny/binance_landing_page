@@ -99,9 +99,7 @@ toggleHeader.forEach(toggle=>{
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        d__s.style.height = "auto"
-    } else {
-        console.log("No match")
+      d__s.style.height = "auto"
     }
   }
   
