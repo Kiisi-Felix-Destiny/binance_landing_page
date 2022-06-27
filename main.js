@@ -1,3 +1,4 @@
+
 let themeColorBtn = document.querySelector(".b-header_theme")
 
 
@@ -55,7 +56,9 @@ modal.onclick = () =>{
 
 const toggleHeader = document.querySelectorAll(".content .header");
 const toggleBtn = document.querySelectorAll(".b-toggle");
+const d__s = document.querySelector(".e--s")
 
+ 
 toggleHeader.forEach(toggle=>{
     let x = toggle.children.item(1);
     let detail = toggle.nextElementSibling;
@@ -94,4 +97,14 @@ toggleHeader.forEach(toggle=>{
     })
 })
 
-
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        d__s.style.height = "auto"
+    } else {
+        console.log("No match")
+    }
+  }
+  
+  var x = window.matchMedia("(min-width: 768px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction)

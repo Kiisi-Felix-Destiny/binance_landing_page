@@ -1537,7 +1537,9 @@ body{
     }
     .b-help__content--details{
         width:100%;
+        height:auto;
     }
+    
 
     .b-footer-main{
         grid-template-columns:75% 25%;
